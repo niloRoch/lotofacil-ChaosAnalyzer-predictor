@@ -1,0 +1,6 @@
+O sistema espera um arquivo CSV com a seguinte estrutura:
+
+Concurso;Data Sorteio;Bola1;Bola2;Bola3;...;Bola15
+2970;31/07/2023;2;3;5;7;9;11;12;15;17;18;20;22;23;24;25
+2969;29/07/2023;1;4;6;8;10;13;14;16;17;19;21;22;24;25
+...
