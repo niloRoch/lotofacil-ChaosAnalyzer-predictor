@@ -1,0 +1,153 @@
+# ============================================================================
+# LOTOFÁCIL ML PREDICTOR - REQUIREMENTS
+# Sistema Avançado de Predição para Lotofácil
+# ============================================================================
+
+# Core Data Science Libraries
+# ============================================================================
+pandas>=1.5.0,<3.0.0           # Data manipulation and analysis
+numpy>=1.21.0,<2.0.0           # Numerical computing
+scipy>=1.9.0,<2.0.0            # Scientific computing
+
+# Machine Learning Core
+# ============================================================================
+scikit-learn>=1.2.0,<2.0.0     # Machine learning library
+xgboost>=1.7.0,<3.0.0          # Gradient boosting framework
+lightgbm>=3.3.0,<5.0.0         # Light gradient boosting (opcional)
+
+# Deep Learning (Opcional - para LSTM/Neural Networks)
+# ============================================================================
+tensorflow>=2.10.0,<3.0.0      # Deep learning framework
+# torch>=1.12.0,<3.0.0         # PyTorch (alternativa ao TensorFlow)
+# torchvision>=0.13.0,<1.0.0   # PyTorch vision utilities
+
+# Data Visualization
+# ============================================================================
+matplotlib>=3.5.0,<4.0.0       # Plotting library
+seaborn>=0.11.0,<1.0.0         # Statistical data visualization
+plotly>=5.10.0,<6.0.0          # Interactive plotting (opcional)
+
+# Progress Bars and UI
+# ============================================================================
+tqdm>=4.64.0,<5.0.0            # Progress bars
+rich>=12.0.0,<14.0.0           # Rich text and beautiful formatting
+
+# Statistical Analysis
+# ============================================================================
+statsmodels>=0.13.0,<1.0.0     # Statistical modeling
+pingouin>=0.5.0,<1.0.0         # Statistical package (opcional)
+
+# Network Analysis
+# ============================================================================
+networkx>=2.8.0,<4.0.0         # Network analysis and graph theory
+
+# Optimization and Hyperparameter Tuning
+# ============================================================================
+optuna>=3.0.0,<4.0.0           # Hyperparameter optimization (opcional)
+hyperopt>=0.2.7,<1.0.0         # Hyperparameter optimization (alternativa)
+
+# Time Series Analysis
+# ============================================================================
+pmdarima>=2.0.0,<3.0.0         # Time series analysis (opcional)
+# prophet>=1.1.0,<2.0.0        # Facebook's time series forecasting
+
+# Model Persistence and Serialization
+# ============================================================================
+joblib>=1.2.0,<2.0.0           # Model serialization
+pickle5>=0.0.11,<1.0.0         # Enhanced pickle (Python < 3.8)
+
+# Data Validation and Type Checking
+# ============================================================================
+pydantic>=1.10.0,<3.0.0        # Data validation
+typing-extensions>=4.0.0,<5.0.0 # Type hints support
+
+# Configuration and Environment
+# ============================================================================
+python-dotenv>=0.20.0,<2.0.0   # Environment variables
+configparser>=5.3.0,<6.0.0     # Configuration file parser
+
+# Logging and Monitoring
+# ============================================================================
+loguru>=0.6.0,<1.0.0           # Advanced logging
+psutil>=5.9.0,<6.0.0           # System and process utilities
+
+# Testing and Development (Optional)
+# ============================================================================
+pytest>=7.0.0,<8.0.0           # Testing framework
+pytest-cov>=4.0.0,<5.0.0       # Coverage testing
+black>=22.0.0,<24.0.0          # Code formatting
+flake8>=5.0.0,<7.0.0           # Code linting
+mypy>=0.991,<2.0.0             # Static type checking
+
+# Jupyter and Interactive Development (Optional)
+# ============================================================================
+jupyter>=1.0.0,<2.0.0          # Jupyter notebook
+ipywidgets>=8.0.0,<9.0.0       # Interactive widgets
+notebook>=6.4.0,<8.0.0         # Jupyter notebook server
+
+# Web Framework (Para futuras APIs/Dashboards)
+# ============================================================================
+fastapi>=0.85.0,<1.0.0         # Modern web framework (opcional)
+streamlit>=1.15.0,<2.0.0       # Web app framework (opcional)
+dash>=2.6.0,<3.0.0             # Plotly Dash (opcional)
+
+# Database Connectivity (Opcional)
+# ============================================================================
+sqlalchemy>=1.4.0,<3.0.0       # SQL toolkit (opcional)
+pymongo>=4.0.0,<5.0.0          # MongoDB driver (opcional)
+
+# Performance and Memory Optimization
+# ============================================================================
+numba>=0.56.0,<1.0.0           # JIT compiler for numerical functions
+memory-profiler>=0.60.0,<1.0.0 # Memory usage profiling
+
+# Utilities
+# ============================================================================
+requests>=2.28.0,<3.0.0        # HTTP library
+urllib3>=1.26.0,<3.0.0         # HTTP client
+beautifulsoup4>=4.11.0,<5.0.0  # Web scraping (para dados externos)
+
+# Date and Time Handling
+# ============================================================================
+python-dateutil>=2.8.0,<3.0.0  # Date utilities
+pytz>=2022.1                    # Timezone definitions
+
+# Parallel Processing
+# ============================================================================
+multiprocessing-logging>=0.3.0,<1.0.0  # Logging for multiprocessing
+concurrent-futures>=3.1.1,<4.0.0        # Backport of concurrent.futures
+
+# ============================================================================
+# INSTALLATION NOTES:
+# ============================================================================
+# 
+# BASIC INSTALLATION (Core functionality):
+# pip install pandas numpy scikit-learn xgboost matplotlib seaborn scipy tqdm networkx
+#
+# FULL INSTALLATION (All features):
+# pip install -r requirements.txt
+#
+# DEVELOPMENT INSTALLATION (Including dev tools):
+# pip install -r requirements.txt -r requirements-dev.txt
+#
+# GPU SUPPORT (TensorFlow with CUDA):
+# pip install tensorflow-gpu>=2.10.0,<3.0.0
+#
+# LIGHTWEIGHT INSTALLATION (Without deep learning):
+# pip install pandas numpy scikit-learn xgboost matplotlib seaborn scipy tqdm
+#
+# ============================================================================
+# COMPATIBILITY:
+# ============================================================================
+# Python: 3.8, 3.9, 3.10, 3.11
+# OS: Windows, macOS, Linux
+# Architecture: x86_64, ARM64 (Apple Silicon)
+#
+# ============================================================================
+# MEMORY REQUIREMENTS:
+# ============================================================================
+# Minimum: 4GB RAM
+# Recommended: 8GB+ RAM
+# For large datasets: 16GB+ RAM
+#
+# ============================================================================
